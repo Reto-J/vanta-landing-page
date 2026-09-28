@@ -1,4 +1,4 @@
-import Navbar from "./components/NavBar";
+import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import TrustedBy from "./components/TrustedBy";
 import Features from "./components/Features";
