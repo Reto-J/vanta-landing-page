@@ -1,0 +1,357 @@
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 900px) {
+  /* Navbar */
+  .navbar {
+    padding: 20px 24px;
+  }
+
+  .navbar__links {
+    gap: 20px;
+  }
+
+  /* Hero */
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 50px;
+  }
+
+  .hero__content {
+    max-width: 700px;
+  }
+
+  .hero__visual {
+    margin-top: 20px;
+  }
+
+  /* Features */
+  .features__header {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .features__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* About */
+  .about {
+    grid-template-columns: 1fr;
+    gap: 70px;
+  }
+
+  /* How it works */
+  .how-it-works__header {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .step:nth-child(3) {
+    border-left: 1px solid #c9c9c4;
+  }
+
+  /* Solutions */
+  .solutions__header {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  /* Statistics */
+  .statistics__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stat:nth-child(3) {
+    border-left: 1px solid var(--border-dark);
+  }
+
+  /* Testimonials */
+  .testimonials__header {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .testimonials__grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Pricing */
+  .pricing__header {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .pricing__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-card {
+    min-height: 450px;
+  }
+
+  /* FAQ */
+  .faq {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  /* Footer */
+  .footer__top {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 600px) {
+  /* Global */
+  .hero,
+  .trusted,
+  .features,
+  .about,
+  .how-it-works,
+  .solutions,
+  .statistics,
+  .testimonials,
+  .pricing,
+  .faq,
+  .cta,
+  .footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* Navbar */
+  .navbar {
+    padding: 18px 20px;
+  }
+
+  .navbar__links,
+  .navbar__button {
+    display: none;
+  }
+
+  .navbar__menu {
+    display: block;
+  }
+
+  /* Hero */
+  .hero {
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+
+  .hero__title {
+    font-size: clamp(3rem, 15vw, 5rem);
+  }
+
+  .hero__description {
+    font-size: 0.85rem;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .button {
+    justify-content: center;
+  }
+
+  .hero__trust {
+    margin-top: 35px;
+  }
+
+  /* Dashboard */
+  .dashboard {
+    min-height: 350px;
+  }
+
+  .dashboard__sidebar {
+    display: none;
+  }
+
+  .dashboard__main {
+    padding: 18px;
+  }
+
+  .dashboard__stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .dashboard__bottom {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard__ai {
+    display: none;
+  }
+
+  /* Trusted */
+  .trusted {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .trusted__companies {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  /* Features */
+  .features {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .features__header {
+    margin-bottom: 50px;
+  }
+
+  .features__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card {
+    min-height: 280px;
+  }
+
+  /* About */
+  .about {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .about__window {
+    min-height: 350px;
+  }
+
+  .about__mini-sidebar {
+    display: none;
+  }
+
+  .about__workspace {
+    width: 100%;
+  }
+
+  .about__floating-card {
+    right: -5px;
+    bottom: -25px;
+  }
+
+  /* How it works */
+  .how-it-works {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  .step {
+    min-height: 250px;
+    border-left: 1px solid #c9c9c4;
+  }
+
+  /* Solutions */
+
+  .solutions {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .solutions__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .solution-card {
+    min-height: 280px;
+  }
+
+  /* Statistics */
+  .statistics {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .statistics__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stat {
+    min-height: 160px;
+  }
+
+  /* Testimonials */
+  .testimonials {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .testimonial-card {
+    min-height: 300px;
+  }
+
+  /* Pricing */
+  .pricing {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .pricing-card {
+    min-height: 430px;
+  }
+
+  /* FAQ */
+  .faq {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  /* CTA */
+  .cta {
+    min-height: 600px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .cta__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cta__decoration--one {
+    left: 2%;
+  }
+
+  .cta__decoration--two {
+    right: 2%;
+  }
+  .cta__circle {
+    display: none;
+  }
+
+  /* Footer */
+  .footer {
+    padding-top: 60px;
+  }
+
+  .footer__links {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 20px;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
